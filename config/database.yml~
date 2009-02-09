@@ -17,9 +17,9 @@
 development:
   adapter: mysql
   encoding: utf8
-  database: acl_development
+  database: download_manager
   username: root
-  password:
+  password: root
   host: localhost
 
 # Warning: The database defined as "test" will be erased and

@@ -12,6 +12,12 @@ class Archive < ActiveRecord::Base
   :content_type => ['image/jpeg', 'image/pjpeg', 
                                    'image/jpg', 'image/png']
 
+  #def archive_attributes=(archive_attributes)
+  #  archive_attributes.each do |attributes|
+  #    archive.build(attributes)
+  #  end
+  #end
+
   def self.destroy_archives(directory, archives)
     Archive.find(archives, :conditions => {:directory_id => directory}).each(&:destroy)
   end

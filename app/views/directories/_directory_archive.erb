@@ -1,0 +1,4 @@
+<% unless directory_archive.new_record? %>
+  <%= image_tag(directory_archive.data.url(:thumb), :alt => '') %>
+  <%= check_box_tag "archive_ids[]", directory_archive.id %>
+<% end rescue nil %>

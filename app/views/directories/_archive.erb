@@ -1,0 +1,9 @@
+<div class="archive">
+<% fields_for "directory[archive_attributes][]", archive do |p| %>
+  <p>
+    <%= p.label :Archive %><br />
+    <%= p.file_field :data, :index => nil %>
+    <%= link_to_function "delete", "remove_field($(this), ('.archive'))" %>
+  </p>
+<% end %>
+</div>

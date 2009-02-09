@@ -1,0 +1,4 @@
+<% unless album_photo.new_record? %>
+  <%= image_tag(album_photo.data.url(:thumb), :alt => '') %>
+  <%= check_box_tag "photo_ids[]", album_photo.id %>
+<% end rescue nil %>

@@ -8,9 +8,6 @@
   <%=h @directory.description %>
 </p>
 
-<% for archive in @directory.archives %>
-  <%= image_tag archive.data.url(:thumb), :alt => "" %>
-<% end %>
 
 <%= link_to 'Edit', edit_directory_path(@directory) %> |
 <%= link_to 'Back', directories_path %>

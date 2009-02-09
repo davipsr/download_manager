@@ -1,0 +1,11 @@
+class Directory < ActiveRecord::Base
+  has_many :archives
+  validates_presence_of :name
+
+def photo_attributes=(photo_attributes)
+  photo_attributes.each do |attributes|
+    photos.build(attributes)
+  end
+end
+
+end

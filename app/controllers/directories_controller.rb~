@@ -61,11 +61,7 @@ class DirectoriesController < ApplicationController
   # PUT /directories/1
   # PUT /directories/1.xml
   def update
-    params[:archive_ids] ||= []
     @directory = Directory.find(params[:id])
-    unless params[:archive_ids].empty?
-      Archive.destroy_archives(params[:id], params[:archive_ids])
-    end
 
     respond_to do |format|
       if @directory.update_attributes(params[:directory])
