@@ -20,5 +20,3 @@
 <br />
 
 <%= link_to 'New directory', new_directory_path %>
-
-<%= @tree.to_s %>

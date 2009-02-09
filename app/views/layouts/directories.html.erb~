@@ -6,6 +6,13 @@
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>Directories: <%= controller.action_name %></title>
   <%= stylesheet_link_tag 'scaffold' %>
+  <%= javascript_include_tag :defaults %>
+  &lt;%= stylesheet_link_tag 'tree' %&gt;
+  &lt;%= javascript_include_tag 'tree' %&gt;
+  &lt;%= javascript_include_tag 'prototype' %&gt;
+  &lt;%= javascript_include_tag 'effects' %&gt;
+  &lt;%= javascript_include_tag 'dragdrop' %&gt;
+  &lt;%= javascript_include_tag 'controls' %&gt;
 </head>
 <body>
 

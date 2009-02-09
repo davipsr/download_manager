@@ -1213,3 +1213,23 @@ Rendering template within layouts/directories
 Rendering directories/index
   [4;36;1mDirectory Columns (15.2ms)[0m   [0;1mSHOW FIELDS FROM `directories`[0m
 Completed in 67ms (View: 23, DB: 22) | 200 OK [http://localhost/directories]
+
+
+Processing DirectoriesController#index (for 127.0.0.1 at 2009-02-09 20:07:09) [GET]
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDirectory Load (2.9ms)[0m   [0;1mSELECT * FROM `directories` [0m
+Rendering template within layouts/directories
+Rendering directories/index
+  [4;35;1mDirectory Columns (17.2ms)[0m   [0mSHOW FIELDS FROM `directories`[0m
+Completed in 1764ms (View: 656, DB: 24) | 200 OK [http://localhost/directories]
+
+
+Processing DirectoriesController#index (for 127.0.0.1 at 2009-02-09 20:10:40) [GET]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mDirectory Load (2.5ms)[0m   [0;1mSELECT * FROM `directories` [0m
+Rendering template within layouts/directories
+Rendering directories/index
+  [4;35;1mDirectory Columns (10.9ms)[0m   [0mSHOW FIELDS FROM `directories`[0m
+Completed in 1429ms (View: 447, DB: 17) | 200 OK [http://localhost/directories]

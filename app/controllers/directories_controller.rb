@@ -3,7 +3,7 @@ class DirectoriesController < ApplicationController
   # GET /directories.xml
   def index
     @directories = Directory.find(:all)
-
+    @tree = Tree.for(RAILS_ROOT)
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @directories }
