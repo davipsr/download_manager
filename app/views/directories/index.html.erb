@@ -1,0 +1,22 @@
+<h1>Listing directories</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+
+<% for directory in @directories %>
+  <tr>
+    <td><%=h directory.name %></td>
+    <td><%=h directory.description %></td>
+    <td><%= link_to 'Show', directory %></td>
+    <td><%= link_to 'Edit', edit_directory_path(directory) %></td>
+    <td><%= link_to 'Destroy', directory, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New directory', new_directory_path %>

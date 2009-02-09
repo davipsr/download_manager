@@ -1,0 +1,13 @@
+<p>
+  <b>Name:</b>
+  <%=h @directory.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%=h @directory.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_directory_path(@directory) %> |
+<%= link_to 'Back', directories_path %>
